@@ -1,3 +1,3 @@
 #### Redovisa på GitHub
 
-Skriv något kort om ditt redovisa-repo och länka till [repot för me/redovisa på GitHub](XXX).
+Ni finner mitt senaste repo för dena sida på min [GitHub](https://github.com/hallengrens/db-design).
