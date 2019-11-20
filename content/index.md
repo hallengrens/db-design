@@ -14,7 +14,7 @@ views:
 Henrik Hallengren
 =========================
 
-Född i Kristainstad 1984, uppväxt i Åhus och efter 10 år i Stockholm så bor jag sedan 4 år tillbaka i en liten by ute på landet utanför Ystad med min fru Michelle, våra tre söner Valentin, Arthur och Balthazar, vår dalmatiner Winston och bondkatten Tindra.
+Född i Kristianstad 1984, uppväxt i Åhus och efter 10 år i Stockholm så bor jag sedan 4 år tillbaka i en liten by ute på landet utanför Ystad med min fru Michelle, våra tre söner Valentin, Arthur och Balthazar, vår dalmatiner Winston och bondkatten Tindra.
 
 Jag har arbetat med strategi, koncept och design för varumärkesbyggnad och digitalisering i över 15 år och är sedan 4 år tillbaka egenanställd konsult.
 

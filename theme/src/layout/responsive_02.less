@@ -1,0 +1,48 @@
+/**
+ * Layout for responsive style through media queries.
+ */
+
+@media screen and (max-width: 1500px) {
+    .site-logo {
+        display: none;
+    }
+}
+@media screen and (max-width: 960px) {
+    .rm-small,
+    .region-header-col-3 {
+        display: block;
+    }
+
+    .rm-desktop {
+        display: none;
+    }
+
+    .rm-navbar-max {
+        display: block;
+    }
+
+    .row {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .wrap-sidebar {
+        width: 100%;
+    }
+
+    ul.toc li {
+        display: inline-block;
+    }
+
+    .has-sidebar-right article {
+        float: none;
+    }
+
+}
+@media screen and (max-width: 680px) {
+    .footer-column-wrapper {
+        display: block;
+        justify-content: space-between;
+    }
+
+}

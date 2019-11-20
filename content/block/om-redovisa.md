@@ -1,3 +1,3 @@
 #### Redovisa på GitHub
 
-Ni finner mitt senaste repo för dena sida på min [GitHub](https://github.com/hallengrens/db-design).
+Ni finner finner även mitt senaste repo för denna sida på min [GitHub](https://github.com/hallengrens/db-design)-sida.

@@ -1,0 +1,72 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
+
+@bgColorHtml: #424242;
+@bgColorBody: #fff;
+@colorBody: #333;
+@fontFamilyBody: 'Montserrat', sans-serif;
+
+@microPD: 0.5em;
+@smallPD: 1em;
+@bigPD: 2em;
+
+@cw: #fff;
+@c1: #eee;
+@c2: #ccc;
+@c3: #aaa;
+@c4: #888;
+@c5: #666;
+@cb: #000;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    color: @colorBody;
+    font: 100.01%/1 @fontFamilyBody;
+}
+
+p {
+    padding-bottom: @smallPD;
+    max-width: 750px;
+    line-height: 1.4;
+}
+
+a {
+    line-height: 1.4;
+}
+
+figure {
+    margin: 0;
+}
+
+main,
+.site-footer {
+    padding: @bigPD;
+    width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: @smallPD;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    align-items: stretch;
+}

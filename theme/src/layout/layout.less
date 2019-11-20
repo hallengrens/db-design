@@ -1,0 +1,136 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+ * General layout
+ */
+.wrap-all {
+    max-width: calc(1200px + 4em);
+    margin: 0 auto;
+    background-color: var(--c1);
+}
+
+ .outer-wrap-header {
+     padding: 0.5em;
+ }
+
+ .region-header-col-1 {
+     display: inline-block;
+ }
+
+ .region-header-col-2 {
+     display: block;
+     float: right;
+ }
+
+ .site-logo img {
+     display: none;
+ }
+
+ .region-flash {
+     max-width: 100%;
+ }
+
+ main {
+     background-color: var(--c1);
+     width: 80vw;
+     margin: 0 auto;
+     max-width: calc(900px + 4em)
+ }
+
+ main.has-sidebar {
+     width: calc(100vw - 300px);
+ }
+
+ main.has-sidebar-right {
+     margin-left: 0;
+ }
+
+ main.has-sidebar-left {
+     margin-right: 0;
+ }
+
+ .fullwidth img {
+     width: 100%;
+ }
+
+ .wrap-sidebar {
+     width: 300px;
+     background-color: var(--c3);
+ }
+
+ .has-sidebar-right article {
+     float: left;
+ }
+
+ .wrap-sidebar .block {
+     padding: 2em;
+     border-bottom: 1px solid #999;
+ }
+
+ .region-sidebar-right {
+     float: right;
+ }
+
+ .region-sidebar-left {
+     float: left;
+ }
+
+ .next-previous {
+     padding: 1em;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: row-reverse;
+ }
+
+ .next {
+     display: block;
+ }
+
+ figure.byline {
+     width: 100px;
+     height: 100px;
+     margin-right: 1em;
+     float: left;
+ }
+
+ .region-after-main {
+     padding: 4em;
+     background-color: var(--c3);
+     border-top: 1px solid var(--c4);
+ }
+
+ .outer-wrap-footer {
+     display: block;
+     width: 100%;
+     background-color: var(--c4);
+     clear: both;
+ }
+
+ .footer-column-wrapper {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .footer-column {
+     display: block;
+     padding: 2em;
+ }
+
+
+ /* Hide submenu, leave this to kmom02 */
+ .rm-desktop ul {
+     display: none;
+ }
+
+ /* Hide responsive/mobile menu, leave this to kmom02 */
+ .rm-navbar-max {
+     display: none;
+ }

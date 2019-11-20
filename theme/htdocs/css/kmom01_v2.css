@@ -1,0 +1,286 @@
+/*!
+ * LESS version of the stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+/**
+ * Style for the stylechooser.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_c5H3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Montserrat Black'), local('Montserrat-Black'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_epG3gnD-w.ttf) format('truetype');
+}
+:root {
+  --c1: #fff;
+  --c2: #eee;
+  --c3: #ddd;
+  --c4: #ccc;
+}
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  -webkit-text-size-adjust: none !important;
+}
+html {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--c4);
+}
+p {
+  padding: 1em;
+}
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header li {
+  list-style: none;
+  display: inline-block;
+  padding: 1em;
+}
+article {
+  padding: 2em;
+  background-color: var(--c2);
+}
+/* SIDEBAR LISTS */
+ul.toc li {
+  padding: 0.5em;
+  font-size: 0.8em;
+  list-style: none;
+}
+li.section-header {
+  font-weight: 800;
+  font-size: 1em;
+}
+li.selected {
+  font-weight: 800;
+  list-style: square;
+}
+li.level-1 {
+  padding-left: 0.75em;
+}
+li.level-2 {
+  padding-left: 1em;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+ * General layout
+ */
+.wrap-all {
+  max-width: calc(1200px + 4em);
+  margin: 0 auto;
+  background-color: var(--c1);
+}
+.outer-wrap-header {
+  padding: 0.5em;
+}
+.region-header-col-1 {
+  display: inline-block;
+}
+.region-header-col-2 {
+  display: block;
+  float: right;
+}
+.site-logo img {
+  display: none;
+}
+.region-flash {
+  max-width: 100%;
+}
+main {
+  background-color: var(--c1);
+  width: 80vw;
+  margin: 0 auto;
+  max-width: calc(900px + 4em);
+}
+main.has-sidebar {
+  width: calc(100vw - 300px);
+}
+main.has-sidebar-right {
+  margin-left: 0;
+}
+main.has-sidebar-left {
+  margin-right: 0;
+}
+.fullwidth img {
+  width: 100%;
+}
+.wrap-sidebar {
+  width: 300px;
+  background-color: var(--c3);
+}
+.has-sidebar-right article {
+  float: left;
+}
+.wrap-sidebar .block {
+  padding: 2em;
+  border-bottom: 1px solid #999;
+}
+.region-sidebar-right {
+  float: right;
+}
+.region-sidebar-left {
+  float: left;
+}
+.next-previous {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.next {
+  display: block;
+}
+figure.byline {
+  width: 100px;
+  height: 100px;
+  margin-right: 1em;
+  float: left;
+}
+.region-after-main {
+  padding: 4em;
+  background-color: var(--c3);
+  border-top: 1px solid var(--c4);
+}
+.outer-wrap-footer {
+  display: block;
+  width: 100%;
+  background-color: var(--c4);
+  clear: both;
+}
+.footer-column-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-column {
+  display: block;
+  padding: 2em;
+}
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+  display: none;
+}
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+  display: none;
+}
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
+  }
+}
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
+}
+/**
+ * My own settings, not currently in their own module.
+ */
