@@ -1,0 +1,56 @@
+/**
+ * Layout for responsive style through media queries.
+ */
+
+@media screen and (max-width: 960px) {
+    .rm-small,
+    .region-header-col-3 {
+        display: block;
+    }
+
+    .rm-desktop {
+        display: none;
+    }
+
+    .rm-navbar-max {
+        display: block;
+    }
+
+    .inner-wrap-main .row {
+        display: block;
+    }
+
+    ul.toc {
+        #desinax-vgrid.column(@columns - 2);
+        #desinax-vgrid.push(1);
+
+     li {
+        display: inline-block;
+        width: auto;
+        &.level-0,
+        &.level-1,
+        &.level-2,
+        &.section-header {
+            #desinax-vgrid.column(@columns);
+            display: inline-block;
+            width: auto;
+            font-size: 0.8em;
+            }
+        }
+    }
+
+    .region-main.has-sidebar {
+        #desinax-vgrid.column(24);
+    }
+    
+    .wrap-sidebar {
+        #desinax-vgrid.column(24);
+    }
+
+}
+@media screen and (max-width: 850px) {
+    .footer-column {
+        #desinax-vgrid.column(24);
+    }
+
+}
