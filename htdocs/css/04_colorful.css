@@ -1,9 +1,8 @@
 /*!
- * LESS version of the stylesheet for design kmom03.
+ * LESS version of the stylesheet for design kmom04.
  *
- * This stylesheet is for the design course and kmom03. Its intention is to
- * use kmom02.css and implement a horisontal and vertical grid as well as
- * implementing a column based design.
+ * This stylesheet is for the design course and kmom04. Its intention is to
+ * give the site a minimalistic design.
  */
 /**
  * Import mixins.
@@ -4788,18 +4787,15 @@ template {
 }
 .wrap-all {
   max-width: 1200px;
-  background-color: #F2F2F2;
+  background-color: #ffffff;
 }
 .site-logo,
 .site-logo img {
   display: none;
 }
 /* HEADER & FLASH –––––––––––––––––––––––––––– */
-.inner-wrap-header {
-  background-color: #0DD8B3;
-}
-.inner-wrap-header .row {
-  display: block;
+.site-logo-text {
+  font-size: 1.2em;
 }
 .region-header {
   display: inline;
@@ -4832,7 +4828,6 @@ template {
   width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  padding-bottom: 1.5em;
 }
 .region-main.has-sidebar {
   display: inline;
@@ -4840,7 +4835,6 @@ template {
   width: 73.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  padding: 1.5em 0;
 }
 .region-main.has-sidebar.has-sidebar-left.has-sidebar-right {
   display: inline;
@@ -4853,8 +4847,8 @@ figure.fullwidth img {
   width: 100%;
 }
 .wrap-sidebar {
-  background-color: #4987D8;
-  color: #F2F2F2;
+  background-color: #F2C748;
+  color: #1e1e1e;
   display: inline;
   float: left;
   width: 23.95833333%;
@@ -4871,6 +4865,11 @@ figure.fullwidth img {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   margin-left: 4.6875%;
+  padding: 3em 0;
+}
+.inner-wrap-main .row {
+  display: flex;
+  align-items: stretch;
 }
 ul.toc {
   padding: 0;
@@ -4889,9 +4888,10 @@ ul.toc li {
 ul.toc li.section-header {
   font-size: 1.2em;
 }
-ul.toc li.selected {
+ul.toc li.selected a {
   font-weight: 600;
   text-decoration: underline;
+  color: #1e1e1e;
 }
 ul.toc li.level-1 {
   display: inline;
@@ -4911,11 +4911,10 @@ ul.toc li.level-2 {
 }
 ul.toc li a {
   text-decoration: none;
-  color: #F2F2F2;
 }
 /* BREADCRUMBS –––––––––––––––––––––––––––– */
 .outer-wrap-breadcrumb {
-  background-color: #0DD8B3;
+  background-color: #F2C748;
 }
 .breadcrumb-list ul {
   list-style: none;
@@ -4932,16 +4931,12 @@ ul.toc li a {
 }
 .breadcrumb-list ul li a {
   text-decoration: none;
-  color: #000;
+  color: #1e1e1e;
 }
 .breadcrumb-list ul li a:hover {
   text-decoration: underline;
 }
 /* AFTER MAIN –––––––––––––––––––––––––––– */
-.inner-wrap-main .row {
-  display: flex;
-  align-items: stretch;
-}
 figure.byline {
   display: inline;
   float: left;
@@ -4949,8 +4944,6 @@ figure.byline {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   margin-left: 8.85416667%;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
 }
 figure.byline img {
   width: 100%;
@@ -4964,14 +4957,17 @@ figure.byline img {
   margin-right: 0.52083333%;
   margin-left: 4.6875%;
 }
+.region-after-main h4 {
+  margin-top: 0;
+}
 .outer-wrap-after-main {
-  background-color: #4987D8;
-  color: #F2F2F2;
+  background-color: #F2C748;
+  color: #1e1e1e;
 }
 /* FOOTER –––––––––––––––––––––––––––– */
 .outer-wrap-footer {
-  background-color: #F24B69;
-  color: #F2F2F2;
+  background-color: #0DD8B3;
+  color: #000000;
 }
 .footer-column-wrapper {
   display: inline;
@@ -4980,7 +4976,6 @@ figure.byline img {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   margin-left: 4.6875%;
-  padding-top: 1.5em;
 }
 .footer-column {
   display: inline;
@@ -5019,10 +5014,10 @@ figure.byline img {
  */
 html {
   overflow-y: scroll;
-  background-color: #F2C748;
+  background-color: #0DD8B3;
 }
 body {
-  color: #333;
+  color: #1e1e1e;
   font: 16px/1.5 'Montserrat';
   overflow-x: hidden;
 }
@@ -5053,14 +5048,20 @@ article table {
   margin-left: 8.85416667%;
   margin-top: 0;
 }
+a {
+  color: #F24B69;
+}
+a:hover {
+  color: #000000;
+}
 td,
 th {
   padding: 0.5em;
-  background-color: #0DD8B3;
+  background-color: #F2C748;
 }
 th {
-  background-color: #000;
-  color: #F2F2F2;
+  background-color: #F2C748;
+  color: #1e1e1e;
 }
 article ul {
   display: inline;
@@ -5086,8 +5087,30 @@ iframe {
 figure {
   margin: 0;
 }
-ul li a:hover {
-  color: #F24B69;
+code {
+  background-color: #F2C748 !important;
+}
+/* REGIONS –––––––––––––––––––––––––––– */
+.region-main {
+  padding-bottom: 6em;
+}
+.footer-column-wrapper,
+.outer-wrap-after-main {
+  padding: 3em 0;
+}
+.outer-wrap-header {
+  background: #F24B69;
+  color: #ffffff;
+}
+.outer-wrap-header a {
+  color: #ffffff;
+}
+.outer-wrap-header a:hover {
+  color: #000000;
+}
+.outer-wrap-header img {
+  margin-top: 15px;
+  margin-bottom: -15px;
 }
 /* GRIDS –––––––––––––––––––––––––––– */
 .vgrid .inner-wrap {
@@ -5132,7 +5155,7 @@ h1 {
   font-size: 2.375em;
   line-height: 1.26315789;
   font-weight: normal;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #1e1e1e;
   margin-bottom: 23px;
 }
 h1 ~ h1,
@@ -5151,7 +5174,7 @@ h2 {
   line-height: 1.6;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #1e1e1e;
 }
 h2 + h3 {
   margin-top: 24px;
@@ -5161,7 +5184,7 @@ h3 {
   line-height: 1.71428571;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #1e1e1e;
 }
 h3 + h4 {
   margin-top: 24px;
@@ -5171,7 +5194,7 @@ h4 {
   line-height: 1;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #1e1e1e;
 }
 h4 + h5 {
   margin-top: 24px;
@@ -5180,7 +5203,7 @@ h5 {
   font-size: 1.25em;
   line-height: 1.2;
   margin-bottom: 23px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #1e1e1e;
 }
 h5 + h6 {
   margin-top: 24px;
@@ -5189,7 +5212,7 @@ h6 {
   font-size: 1.25em;
   line-height: 1.2;
   margin-bottom: 23px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #1e1e1e;
 }
 p {
   margin-bottom: 24px;
@@ -5742,6 +5765,10 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     width: 98.95833333%;
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
+  }
+  .outer-wrap-header img {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 850px) {

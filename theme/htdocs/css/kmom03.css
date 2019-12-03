@@ -4826,23 +4826,12 @@ template {
   margin-bottom: -7px;
 }
 /* MAIN –––––––––––––––––––––––––––– */
-figure.fullwidth {
+.region-main {
   display: inline;
   float: left;
   width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-}
-figure.fullwidth img {
-  width: 100%;
-}
-.region-main {
-  display: inline;
-  float: left;
-  width: 82.29166667%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-  margin-left: 8.85416667%;
   padding-bottom: 1.5em;
 }
 .region-main.has-sidebar {
@@ -4859,6 +4848,9 @@ figure.fullwidth img {
   width: 48.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+}
+figure.fullwidth img {
+  width: 100%;
 }
 .wrap-sidebar {
   background-color: #4987D8;

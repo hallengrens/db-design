@@ -79,5 +79,19 @@ return [
             "url" => "test",
             "title" => "En liten sida för tester",
         ],
+        [
+            "text" => "Rapport",
+            "url" => "rapport",
+            "title" => "Rapporter från kursmomenten.",
+            "submenu" => [
+                "items" => [
+                    [
+                        "text" => "04 Färgschema",
+                        "url" => "rapport/04_fargschema",
+                        "title" => "Redovisning för kmom01.",
+                    ],
+                ],
+            ],
+        ],
     ],
 ];
