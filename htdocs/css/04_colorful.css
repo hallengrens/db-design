@@ -5027,6 +5027,7 @@ h3,
 h4,
 h5,
 h6,
+time,
 fieldset {
   display: inline;
   float: left;
@@ -5063,13 +5064,14 @@ th {
   background-color: #F2C748;
   color: #1e1e1e;
 }
-article ul {
+article ul,
+article ol {
   display: inline;
   float: left;
   width: 78.125%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  margin-left: 8.85416667%;
+  margin-left: 13.02083333%;
   margin-top: 0;
 }
 header a {

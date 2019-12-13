@@ -88,10 +88,20 @@ return [
                     [
                         "text" => "04 Färgschema",
                         "url" => "rapport/04_fargschema",
-                        "title" => "Redovisning för kmom01.",
+                        "title" => "Rapport för kmom04.",
+                    ],
+                    [
+                        "text" => "05 Laddningstid",
+                        "url" => "rapport/05_laddningstid",
+                        "title" => "Rapport för kmom05.",
                     ],
                 ],
             ],
+        ],
+        [
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "Min blogg för kursen",
         ],
     ],
 ];

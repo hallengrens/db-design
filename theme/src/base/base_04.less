@@ -19,6 +19,7 @@ h3,
 h4,
 h5,
 h6,
+time,
 fieldset {
     #desinax-vgrid.column(@columns - 2);
     #desinax-vgrid.push(1);
@@ -52,9 +53,10 @@ th {
     color: @typePri;
 }
 
-article ul {
+article ul,
+article ol {
     #desinax-vgrid.column(@columns - 5);
-    #desinax-vgrid.push(2);
+    #desinax-vgrid.push(3);
     margin-top: 0;
 }
 

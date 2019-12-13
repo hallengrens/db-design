@@ -1,0 +1,153 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+html {
+    overflow-y: scroll;
+    background-color: @background;
+}
+
+body {
+    color: @typePri;
+    #desinax-hgrid.font(@fontSizeBody);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+time,
+fieldset {
+    padding: 0 1em;
+    margin-bottom: 0.5em;
+}
+
+.blog-list-item {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    .readmore {
+        clear: both;
+    }
+    ul,
+    ol {
+        margin-left: 2em;
+        margin-top: 0;
+    }
+}
+
+p,
+pre,
+article div,
+article table {
+    padding: 0 2em;
+    margin-top: 0;
+}
+
+a {
+    color: @accent;
+    &:hover {
+        color: @typeSec;
+    }
+}
+
+td,
+th {
+    padding: 0.5em;
+    background-color: @lines;
+}
+
+th {
+    background-color: @lines;
+    color: @typePri;
+}
+
+article {
+    ul,
+    ol {
+        margin-left: 2em;
+        margin-top: 0;
+    }
+}
+
+header {
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+code {
+    background-color: @lines !important;
+}
+
+/* REGIONS –––––––––––––––––––––––––––– */
+
+.region-main {
+    padding-bottom: 6em;
+}
+
+.footer-column-wrapper,
+.outer-wrap-after-main {
+    padding: 3em 0;
+}
+
+.outer-wrap-header {
+    background: @accent;
+    color: @typeNeg;
+
+    a {
+        color: @typeNeg;
+        &:hover {
+            color: @typeSec;
+        }
+    }
+
+    img {
+        margin-top: 15px;
+        margin-bottom: -15px;
+    }
+}
+
+
+
+/* GRIDS –––––––––––––––––––––––––––– */
+
+// Activate vertical grid
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1200px);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+ // Activate grid and affect all typographic elements
+ #desinax-hgrid.activateDefaultTypography();
+
+ // Show the grid
+ .hgrid .inner-wrap {
+     #desinax-hgrid.showGridAlt(#ff6a6a);
+ }
+ 
+ .hgrid .wrap-sidebar {
+     #desinax-hgrid.showGridAlt(#ff6a6a);
+ }
